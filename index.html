@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Page setup: metadata, fonts, and main stylesheet -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing Plans — HTML version</title>
@@ -10,9 +11,14 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Small top label that identifies this static HTML version -->
     <p class="page-label"><strong>HTML version</strong> — static markup</p>
+
+    <!-- Pricing cards layout wrapper -->
     <div class="cards-container">
+        <!-- Card 1: Hobby plan -->
         <div class="card">
+            <!-- Card header and feature content -->
             <div class="card-top">
                 <h3 class="card-title">Hobby</h3>
                 <p class="card-price">
@@ -20,6 +26,7 @@
                 </p>
                 <div class="card-content">
                     <p class="includes-text">Includes:</p>
+                    <!-- Feature checklist -->
                     <ul class="features-list">
                         <li>
                             <span class="checkmark">✓</span>
@@ -36,9 +43,13 @@
                     </ul>
                 </div>
             </div>
+            <!-- Card action -->
             <button class="download-button secondary">Download</button>
         </div>
+
+        <!-- Card 2: Pro plan -->
         <div class="card">
+            <!-- Card header and feature content -->
             <div class="card-top">
                 <h3 class="card-title">Pro</h3>
                 <p class="card-price">
@@ -47,6 +58,7 @@
                 </p>
                 <div class="card-content">
                     <p class="includes-text">Everything in Hobby, plus:</p>
+                    <!-- Feature checklist -->
                     <ul class="features-list">
                         <li>
                             <span class="checkmark">✓</span>
@@ -67,7 +79,35 @@
                     </ul>
                 </div>
             </div>
+            <!-- Primary card action -->
             <button class="download-button primary">Get Pro</button>
+        </div>
+        <!-- Card 2: Enterprise plan -->
+        <div class="card">
+            <!-- Card header and feature content -->
+            <div class="card-top">
+                <h3 class="card-title">Enterprise</h3>
+                <p class="card-price">
+                    <span class="card-price-amount">$Custom</span>
+                    <span class="card-price-period">/month</span>
+                </p>
+                <div class="card-content">
+                    <p class="includes-text">Everything in Pro, plus:</p>
+                    <!-- Feature checklist -->
+                    <ul class="features-list">
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Background Agents
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Maximum context windows
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Primary card action -->
+            <button class="download-button primary">Get Enterprise</button>
         </div>
     </div>
 </body>
